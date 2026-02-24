@@ -1,0 +1,109 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #111;
+    padding: 15px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero img {
+    border-radius: 50%;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* FORM */
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

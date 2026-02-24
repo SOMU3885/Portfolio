@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me - Raga Somesh Kumar</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body id="about-page" class="bg-gray-100 text-gray-800">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-xl font-semibold">Portfolio</a>
+
+            <div class="space-x-6">
+                <a href="/" class="hover:text-blue-400 transition">Home</a>
+                <a href="/about" class="text-blue-400 font-semibold">About</a>
+                <a href="/projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="/contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= MAIN SECTION ================= -->
+    <div class="max-w-6xl mx-auto px-6 py-16">
+
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4">About Me</h1>
+            <p class="text-lg text-gray-600">
+                A dedicated B.Tech Graduate aspiring for IT roles.
+            </p>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="grid md:grid-cols-2 gap-10">
+
+            <!-- Educational Qualifications -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-blue-600 text-white px-6 py-4">
+                    <h4 class="text-xl font-semibold">Educational Qualifications</h4>
+                </div>
+
+                <div class="p-6 overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="p-3 border-b">Degree/Level</th>
+                                <th class="p-3 border-b">Specialization</th>
+                                <th class="p-3 border-b">Percentage/CGPA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-3 border-b font-semibold">B.Tech</td>
+                                <td class="p-3 border-b">CSE - Internet of Things</td>
+                                <td class="p-3 border-b">
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                                        8.16 CGPA
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-3 border-b font-semibold">Intermediate / Class 12</td>
+                                <td class="p-3 border-b">MPC</td>
+                                <td class="p-3 border-b">
+                                    <span class="bg-blue-400 text-white px-3 py-1 rounded-full text-sm">
+                                        94.5 %
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-3 border-b font-semibold">Class 10 (SSC)</td>
+                                <td class="p-3 border-b">General Education</td>
+                                <td class="p-3 border-b">
+                                    <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-sm">
+                                        10 GPA
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Address Details -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-gray-900 text-white px-6 py-4">
+                    <h4 class="text-xl font-semibold">Address Details</h4>
+                </div>
+
+                <div class="p-6 space-y-8">
+
+                    <!-- Permanent Address -->
+                    <div>
+                        <h5 class="text-blue-600 font-semibold border-b pb-2 mb-3">
+                            Permanent Address
+                        </h5>
+                        <p>Door No: 1-54,</p>
+                        <p>Main Road Rotaripuram, Bukkarayasamudram</p>
+                        <p>Anantapur, Andhra Pradesh - 515701.</p>
+                    </div>
+
+                    <!-- Temporary Address -->
+                    <div>
+                        <h5 class="text-gray-700 font-semibold border-b pb-2 mb-3">
+                            Temporary (Current) Address
+                        </h5>
+                        <p>Light House PG,</p>
+                        <p>CKB Layout, Marathahalli,</p>
+                        <p>Bengaluru, Karnataka - 560037.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center mt-12">
+            <a href="/"
+               class="bg-blue-600 text-white px-8 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+                Back to Home
+            </a>
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>&copy; 2026 Raga Somesh Kumar</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Raga Somesh Kumar</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body id="contact-page" class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-xl font-semibold">Portfolio</a>
+
+            <div class="space-x-6">
+                <a href="/" class="hover:text-blue-400 transition">Home</a>
+                <a href="/about" class="hover:text-blue-400 transition">About</a>
+                <a href="/projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="/contact" class="text-blue-400 font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <div class="flex-grow">
+
+        <div class="max-w-4xl mx-auto px-6 py-16">
+
+            <div class="bg-white shadow-lg rounded-xl p-10">
+
+                <h2 class="text-3xl font-bold text-center mb-4">Get In Touch</h2>
+
+                <p class="text-center text-gray-500 mb-8">
+                    Have a question or want to work together? Send me a message!
+                </p>
+
+                <!-- Contact Form -->
+                <form action="#" method="post" class="space-y-6">
+
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block font-medium mb-2">Full Name</label>
+                        <input type="text"
+                               id="name"
+                               placeholder="Enter your name"
+                               required
+                               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block font-medium mb-2">Email Address</label>
+                        <input type="email"
+                               id="email"
+                               placeholder="name@example.com"
+                               required
+                               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+                        <label for="subject" class="block font-medium mb-2">Subject</label>
+                        <select id="subject"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                            <option selected>General Inquiry</option>
+                            <option value="1">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block font-medium mb-2">Message</label>
+                        <textarea id="message"
+                                  rows="5"
+                                  placeholder="Your message here..."
+                                  required
+                                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                    </div>
+
+                    <!-- Button -->
+                    <div>
+                        <button type="submit"
+                                class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                            Send Message
+                        </button>
+                    </div>
+
+                </form>
+
+                <!-- Divider -->
+                <hr class="my-10">
+
+                <!-- Contact Info -->
+                <div class="grid md:grid-cols-2 gap-6 text-center">
+
+                    <div>
+                        <h5 class="font-semibold text-lg mb-2">Email Me</h5>
+                        <p class="text-blue-600">ragasomeshkumar@gmail.com</p>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-lg mb-2">LinkedIn</h5>
+                        <a href="https://www.linkedin.com/in/raga-somesh-kumar-17ab95263"
+                           target="_blank"
+                           class="text-blue-600 hover:underline">
+                            Connect with me
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Back to Home -->
+            <div class="text-center mt-8">
+                <a href="/"
+                   class="text-blue-600 hover:underline font-medium">
+                    ← Back to Homepage
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>&copy; 2026 Raga Somesh Kumar</p>
+    </footer>
+
+</body>
+</html>

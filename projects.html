@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${project.name}">Project Details</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body id="projects-page" class="bg-gray-100 text-gray-800">
+
+    <div class="max-w-5xl mx-auto px-6 py-10">
+
+        <!-- Back Button -->
+        <a th:href="@{/}"
+           class="text-blue-600 hover:underline font-medium">
+           ← Back to Home
+        </a>
+
+        <!-- ================= PROJECT EXISTS ================= -->
+        <div th:if="${project != null}" class="mt-6">
+
+            <!-- Header -->
+            <div class="bg-gray-900 text-white py-12 px-6 rounded-xl text-center shadow-lg">
+                <h1 class="text-4xl font-bold mb-3"
+                    th:text="${project.name}">
+                    Project Title
+                </h1>
+
+                <p class="text-lg text-gray-300"
+                   th:text="${project.tagline}">
+                    Subtitle
+                </p>
+            </div>
+
+            <!-- Main Image -->
+            <img th:src="${project.imageUrl}"
+                 alt="Project Image"
+                 class="w-full rounded-xl my-8 shadow-md">
+
+            <!-- Description -->
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">Description</h2>
+                <p class="leading-relaxed text-gray-700"
+                   th:text="${project.description}">
+                    Full project details go here.
+                </p>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="mt-8 bg-white p-8 rounded-xl shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
+
+                <div class="flex flex-wrap gap-3">
+                    <span th:each="tech : ${project.technologies}"
+                          th:text="${tech}"
+                          class="bg-gray-200 px-4 py-2 rounded-full text-sm font-medium">
+                        Java
+                    </span>
+                </div>
+            </div>
+
+            <!-- Additional Details -->
+            <div class="mt-8 bg-white p-8 rounded-xl shadow-md">
+
+                <p class="mb-2">
+                    <strong>Category:</strong>
+                    <span th:text="${project.category}">Web</span>
+                </p>
+
+                <p class="mb-6">
+                    <strong>Date:</strong>
+                    <span th:text="${project.date}">2026</span>
+                </p>
+
+                <!-- Buttons -->
+                <div class="space-x-4">
+                    <a th:href="${project.liveUrl}"
+                       class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                        View Live
+                    </a>
+
+                    <a th:href="${project.githubUrl}"
+                       class="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition">
+                        Source Code
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= PROJECT NOT FOUND ================= -->
+        <div th:unless="${project != null}"
+             class="text-center mt-20">
+
+            <h1 class="text-3xl font-bold mb-4">
+                Project Not Found
+            </h1>
+
+            <p class="text-gray-600">
+                Sorry, we couldn't load the project data.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

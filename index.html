@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Raga Somesh Kumar - Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body id="index-page" class="bg-gray-100 text-gray-800">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="max-w-5xl mx-auto text-center px-6">
+
+            <!-- Profile Image -->
+            <img src="/img.jpg"
+                 class="rounded-full mx-auto mb-6 w-36 h-36 object-cover border-4 border-white shadow-lg"
+                 alt="Raga Somesh Kumar">
+
+            <!-- Name -->
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                RAGA SOMESH KUMAR
+            </h1>
+
+            <!-- Degree -->
+            <p class="font-semibold text-lg mb-2">
+                Bachelor of Technology in Computer Science and Engineering (2025 Graduate)
+            </p>
+
+            <!-- Role -->
+            <p class="text-xl mb-6">
+                Java and Spring Boot Web Application Developer (Full Stack)
+            </p>
+
+            <!-- About Summary -->
+            <p class="max-w-3xl mx-auto text-justify leading-relaxed mb-8">
+                A motivated and detail-oriented B.Tech graduate in Computer Science and Engineering,
+                eager to launch a career in the IT field. Possessing a solid foundation and
+                hands-on experience through academic projects. Demonstrates excellent
+                problem-solving abilities, a strong work ethic, and a passion for
+                continuous learning and professional development. Ready to contribute
+                effectively to team projects and take on new challenges in a dynamic work environment.
+            </p>
+
+            <!-- Navigation Buttons -->
+            <div class="space-x-4">
+                <a href="/about"
+                   class="border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition">
+                   About
+                </a>
+
+                <a href="/projects"
+                   class="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
+                   View My Projects
+                </a>
+
+                <a href="/contact"
+                   class="border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition">
+                   Contact
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-3xl font-bold text-center mb-12">
+                Technical Skills
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8 text-center">
+
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <h4 class="text-xl font-semibold mb-2">
+                        Java Full Stack Development
+                    </h4>
+                    <p class="text-gray-600">
+                        Using Spring Boot
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <h4 class="text-xl font-semibold mb-2">
+                        Computer Networking
+                    </h4>
+                    <p class="text-gray-600">
+                        TCP/IP, DNS, Connectivity
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>&copy; 2026 Raga Somesh Kumar</p>
+    </footer>
+
+</body>
+</html>
